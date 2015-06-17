@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "browser-sync start --server --files='src/js/*.js,src/test/index.html,src/test/spec/**/*.js' --startPath src/test/index.html",
+    "start_category": "browser-sync start --server --files='src/category.html,src/css/*.css,src/js/*.js' --startPath src/category.html",
     "start": "browser-sync start --server --files='src/index.html,src/css/*.css,src/js/*.js' --startPath src/index.html",
-    "sass": "node-sass src/scss/main.scss -o src/css/",
+    "sass": "node-sass src/scss/main_category.scss -o src/css/ --watch",
     "wiredep": "wiredep --src src/index.html",
-    "build": ["gulp"
-    ]
+    "build": ["gulp"]
   },
   "repository": {
     "type": "git",
