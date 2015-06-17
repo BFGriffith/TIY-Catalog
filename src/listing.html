@@ -2,22 +2,53 @@
 <html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>TIY-Catalog</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!--bower:css-->
-  <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-  <link <rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-  <!--endbower-->
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TIY-Catalog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bower:css-->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <link <rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!--endbower-->
+    <link rel="stylesheet" href="css/main_listing.css">
 
 </head>
 
 <body>
-  <div class="grid">
+    <header class="container-fluid">
+            <!--   Per reference implementation: itemscope itemtype -->
+            <div itemscope itemtype="http:data-vocabulary.org/Breadcrumb">
+                <a itemprop="url" href="https://www.etsy.com/shop/undulatingcontours?ref=l2-shopheader-name">
+                    <span itemprop="title">undulatingcontours</span>
+                </a>
+            </div>
+
+            <div class="favorite_seller">
+                <span>{{Favorite Shop}}</span>
+            </div>
+            <!-- Start of thumbnails -->
+            <div id="shop_listings">
+                <ul class="thumbnails">
+                    <li>
+                        <img src="http://lorempixel.com/75/75/cats" alt="thumb_1">
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/75/75/abstract" alt="thumb_2">
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/75/75/food" alt="thumb_3">
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/75/75/nature" alt="thumb_4">
+                    </li>
+                    <li><a href="https://www.etsy.com/shop/undulatingcontours?ref=listing-shop-header-item-count">31 items</a></li>
+                </ul>
+            </div>
+            <!-- End of thumbnails -->
+    </header>
+
+    <div class="container-fluid">
         <section class="unit">1</section>
         <section class="unit">2</section>
         <section class="unit">3</section>
@@ -30,52 +61,47 @@
         <section class="unit">10</section>
         <section class="unit">11</section>
         <section class="unit">12</section>
-      </div><!-- End of grid -->
+    </div>
+    <!-- End of grid -->
 
-      <!-- Start of seller info -->
-      <main class="content_wrapper">
+    <!-- Start of seller info -->
+    <main class="content_wrapper">
         <div id="seller_info">
-          <div class="logo"><a href="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg"><img src="http://lorempixel.com/75/75/technics" alt="logo"></a></div>
-        </div><!-- End of seller info -->
+            <div class="logo">
+                <a href="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg">
+                    <img src="http://lorempixel.com/75/75/technics" alt="logo">
+                </a>
+            </div>
+        </div>
+        <!-- End of seller info -->
 
-        <div class="store_name">
-        <!--   Per reference implementation: itemscope itemtype -->
-        <div itemscope itemtype="http:data-vocabulary.org/Breadcrumb">
-          <a itemprop="url" href="https://www.etsy.com/shop/undulatingcontours?ref=l2-shopheader-name"><span itemprop="title">undulatingcontours</span></a>
-        </div>
-
-        <div class="favorite_seller"><span>{{Favorite Shop}}</span>
-        </div>
-        <!-- Start of thumbnails -->
-        <div id="shop_listings">
-          <ul class="thumbnails">
-            <li><img src="http://lorempixel.com/75/75/technics" alt="thumb_1"></li>
-            <li><img src="http://lorempixel.com/75/75/technics" alt="thumb_2"></li>
-            <li><img src="http://lorempixel.com/75/75/technics" alt="thumb_3"></li>
-            <li><img src="http://lorempixel.com/75/75/technics" alt="thumb_4"></li>
-            <li><a href="https://www.etsy.com/shop/undulatingcontours?ref=listing-shop-header-item-count">31 items</a></li>
-          </ul>
-        </div>
-        <!-- End of thumbnails -->
 
         <!-- start of like this banner container -->
         <div class="listing_add_favs">
-          <button type="button" class="favorite">Favorite</button>
-          <div class="like_item">
-          <h2>Like this item?</h2>
-          <p>Add it to your favorites to revisit it later.</p>
-          </div>
+            <button type="button" class="favorite">Favorite</button>
+            <div class="like_item">
+                <h2>Like this item?</h2>
+                <p>Add it to your favorites to revisit it later.</p>
+            </div>
         </div>
 
         <!-- start of large image container -->
         <div class="large_img_wrapper">
-          <div id="listing_image">
-            <img src="https://img1.etsystatic.com/061/0/7321706/il_570xN.786457521_7ct1.jpggit" alt="">
-          </div>
+            <div id="listing_image">
+                <img src="https://img1.etsystatic.com/061/0/7321706/il_570xN.786457521_7ct1.jpggit" alt="">
+            </div>
         </div>
 
-      </main>
+    </main>
 
+    <footer>
+        <h2 class="related">
+            <strong>Related to this Item</strong>
+        </h2>
+        <button>
+            <a href="#"></a>
+        </button>
+    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- bower:js -->
