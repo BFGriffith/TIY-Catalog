@@ -1,8 +1,20 @@
+body{
+  background-color: rgb(232, 222, 211);
+}
 
 #results_column{
 
-  
-  padding-top: 1em;
+  background-color: white;
+  margin-top: 1em;
+  border-radius: 2%;
+  #categories{
+    padding: 0;
+
+  }
+  .results{
+    list-style-type: none;
+
+  }
 
 }
 
