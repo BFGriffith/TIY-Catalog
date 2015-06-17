@@ -52,7 +52,7 @@ gulp.task('browser-sync', function() {
       .pipe(gulp.dest('dist/')); //.dest refers to the destination. This is basically(gulp .into)
       //We are piping to a destination
 
-    }); === === =
+    });
     /*
     var gulp = require('gulp');
     gulp.task('do-something', function() {
