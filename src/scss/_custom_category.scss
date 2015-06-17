@@ -1,6 +1,50 @@
 
 #results_column{
 
-  outline: 2px solid blue;
+  
+  padding-top: 1em;
 
+}
+
+
+//Result Images Column 1
+.images_col_1{
+  list-style: none;
+  padding-top: 1em;
+  h5{
+    width: 226px;
+    text-overflow: ellipsis;
+  }
+
+  .image_col_1_descr{
+
+  }
+}
+
+//Result Images Column 2
+.images_col_2{
+  list-style: none;
+  padding-top: 1em;
+  h5{
+    width: 226px;
+  }
+
+  .image_col_2_descr{
+
+
+
+  }
+}
+//Result Images Column 3
+.images_col_3{
+  list-style: none;
+  padding-top: 1em;
+  h5{
+    width: 226px;
+  }
+
+  .image_col_3_descr{
+
+
+  }
 }
