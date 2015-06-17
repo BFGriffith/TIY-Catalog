@@ -55,4 +55,4 @@
   },
   "type": "Listing",
   "pagination": {}
-}
+} %
