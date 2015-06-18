@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "results": [{
+    "category_id": 68887460,
+    "name": "music",
+    "meta_title": "Handmade Music Items on Etsy - Original music recordings, instruments, accessories",
+    "meta_keywords": "handmade music, original music, self-published cd, cassette tape, musical instrument, handcrafted instruments, guitar, music accessories",
+    "meta_description": "Shop for unique, handmade musical items on Etsy, a global handmade marketplace. Browse musical items & more from independent artists.",
+    "page_description": "Shop for unique, handmade music items from our artisan community",
+    "page_title": "Handmade music items",
+    "category_name": "music",
+    "short_name": "Music",
+    "long_name": "Music",
+    "num_children": 10
+  }],
+  "params": {
+    "tag": "music"
+  },
+  "type": "Category",
+  "pagination": {}
+} %
