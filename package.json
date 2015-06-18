@@ -8,6 +8,7 @@
     "start_category": "browser-sync start --server --files='src/category.html,src/css/*.css,src/js/*.js' --startPath src/category.html",
     "start_listing": "browser-sync start --server --files='src/listing.html,src/css/*.css,src/js/*.js' --startPath src/listing.html",
     "category_sass": "node-sass src/scss/main_category.scss -o src/css/ --watch",
+    "listing_sass": "node-sass src/scss/main_listing.scss -o src/css/ --watch",
     "wiredep": "wiredep --src src/listing.html src/category.html",
     "build": ["gulp"]
   },

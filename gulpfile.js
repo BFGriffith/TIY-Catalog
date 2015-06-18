@@ -26,48 +26,20 @@ gulp.task('browser-sync', function() {
 
     gulp.task('sass', function() {
       var sass = require('gulp-sass');
-      gulp.src('src/scss/main.scss')
+      gulp.src('src/scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('src/css/main.css'))
+        .pipe(gulp.dest('src/css/'))
         .pipe(sass({
           outputStyle: 'compressed'
         }))
         .pipe(gulp.dest('dist/css/'))
     }); //End of gulp.task(sass)
+
     gulp.watch('watch:sass', function() {
 
-      gulp.watch('src/scss/*.scss', ['sass'], function() {
-        console.log('File changed');
-      });
+      gulp.watch('src/scss/*.scss', ['sass'], function() {});
       gulp.watch('src/index.html', ['build']);
 
-    })
-
-
-    gulp.task('build', ['sass'], function() {
-
-      //! means no scss files
-      gulp.src(['src/*', '!src/scss']) //this is basically (gulpfrom())
-
-      .pipe(gulp.dest('dist/')); //.dest refers to the destination. This is basically(gulp .into)
-      //We are piping to a destination
-
-    });
-    /*
-    var gulp = require('gulp');
-    gulp.task('do-something', function() {
-                //console.log(arguments); console.log('I did something');
-    });
-    */
-
-    var gulp = require('gulp');
-
-    gulp.task('sass', function() {
-
-      var sass = require('gulp-sass');
-      gulp.src('src/scss/main.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('dist/css/'));
     })
 
     gulp.task('build', ['sass'], function() {
