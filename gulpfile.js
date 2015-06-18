@@ -11,11 +11,9 @@ gulp.task('browser-sync', function() {
       });
     } //End of gulp.task browser-sync
 
-
-
-    gulp.task('serve', ['sass'], function() {
-
-      browserSync.init({
+gulp.task('serve', ['sass'], function() {
+  var sass = require('gulp-sass');
+    browserSync.init({
         server: "src/"
       });
 
