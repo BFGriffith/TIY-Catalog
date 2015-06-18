@@ -96,14 +96,16 @@ textarea {
    ========================================================================== */
 .body {
  background-color: rgb(232, 222, 211);
+ font-family: "Arial","Helvetica",sans-serif;
+ background-color: #f5f5f1;
 }
-.grid {
-background-color: gray;
+#store_header {
+float:left;
+background-color: inherit;
 width: 100%;
 }
-.unit {
-outline: black dashed 3px;
-}
+#store_header_content {
+display: inline-block}
 
 
 /* ==========================================================================

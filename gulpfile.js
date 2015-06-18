@@ -14,7 +14,7 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('serve', ['sass'], function() {
-
+  var sass = require('gulp-sass');
     browserSync.init({
         server: "src/"
     });
