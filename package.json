@@ -10,7 +10,9 @@
     "category_sass": "node-sass src/scss/main_category.scss -o src/css/ --watch",
     "listing_sass": "node-sass src/scss/main_listing.scss -o src/css/ --watch",
     "wiredep": "wiredep --src src/listing.html src/category.html",
-    "build": ["gulp"]
+    "build": [
+      "gulp"
+    ]
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
     "bower": "^1.4.1",
     "browser-sync": "^2.7.10",
     "gulp": "^3.9.0",
+    "gulp-useref": "^1.2.0",
     "node-sass": "^3.2.0",
     "wiredep": "^2.2.2"
   }
