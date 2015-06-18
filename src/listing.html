@@ -17,8 +17,10 @@
 
 <body>
     <header class="container-fluid">
+      <div class="row">
             <!--   Per reference implementation: itemscope itemtype -->
             <div itemscope itemtype="http:data-vocabulary.org/Breadcrumb">
+              <img src="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg">
                 <a itemprop="url" href="https://www.etsy.com/shop/undulatingcontours?ref=l2-shopheader-name">
                     <span itemprop="title">undulatingcontours</span>
                 </a>
@@ -29,46 +31,31 @@
             </div>
             <!-- Start of thumbnails -->
             <div id="shop_listings">
-                <ul class="thumbnails">
-                    <li>
+                <div class="thumbnails">
+                    <div class="col-md-1">
                         <img src="http://lorempixel.com/75/75/cats" alt="thumb_1">
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-md-1">
                         <img src="http://lorempixel.com/75/75/abstract" alt="thumb_2">
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-md-1">
                         <img src="http://lorempixel.com/75/75/food" alt="thumb_3">
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-md-1">
                         <img src="http://lorempixel.com/75/75/nature" alt="thumb_4">
-                    </li>
-                    <li><a href="https://www.etsy.com/shop/undulatingcontours?ref=listing-shop-header-item-count">31 items</a></li>
-                </ul>
+                    </div>
+                    <div><a href="https://www.etsy.com/shop/undulatingcontours?ref=listing-shop-header-item-count">31 items</a></div>
+                </div>
             </div>
             <!-- End of thumbnails -->
+          </div>
     </header>
 
-    <div class="container-fluid">
-        <section class="unit">1</section>
-        <section class="unit">2</section>
-        <section class="unit">3</section>
-        <section class="unit">4</section>
-        <section class="unit">5</section>
-        <section class="unit">6</section>
-        <section class="unit">7</section>
-        <section class="unit">8</section>
-        <section class="unit">9</section>
-        <section class="unit">10</section>
-        <section class="unit">11</section>
-        <section class="unit">12</section>
-    </div>
-    <!-- End of grid -->
-
     <!-- Start of seller info -->
-    <main class="content_wrapper">
-        <div id="seller_info">
+    <main class="container-fluid" id="content_wrapper">
+        <div class="row" id="seller_info">
             <div class="logo">
-                <a href="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg">
+                <a href="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg" class="class="col-md-1>
                     <img src="http://lorempixel.com/75/75/technics" alt="logo">
                 </a>
             </div>
@@ -86,7 +73,7 @@
         </div>
 
         <!-- start of large image container -->
-        <div class="large_img_wrapper">
+        <div class="col-md-3 id="large_img_wrapper">
             <div id="listing_image">
                 <img src="https://img1.etsystatic.com/061/0/7321706/il_570xN.786457521_7ct1.jpggit" alt="">
             </div>
@@ -94,8 +81,8 @@
 
     </main>
 
-    <footer>
-        <h2 class="related">
+    <footer class="container-fluid" >
+        <h2 class="col-md-12" id="related">
             <strong>Related to this Item</strong>
         </h2>
         <button>

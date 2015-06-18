@@ -94,12 +94,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.body {
+ background-color: rgb(232, 222, 211);
+}
 .grid {
-  background-color: gray;
-  width: 100%;
+background-color: gray;
+width: 100%;
 }
 .unit {
-  outline: black dashed 3px;
+outline: black dashed 3px;
 }
 
 
