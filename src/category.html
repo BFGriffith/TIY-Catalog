@@ -12,39 +12,19 @@
 
   <!--bower:css-->
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-  <link <rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <!--endbower-->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main_category.css">
 
 </head>
 
 <body>
 
-  <div class="grid">
-    <section class="units">1</section>
-    <section class="units">2</section>
-    <section class="units">3</section>
-    <section class="units">4</section>
-    <section class="units">5</section>
-    <section class="units">6</section>
-    <section class="units">7</section>
-    <section class="units">8</section>
-    <section class="units">9</section>
-    <section class="units">10</section>
-    <section class="units">11</section>
-    <section class="units">12</section>
-  </div>
-  <!-- Reference Grid end -->
-
-  <div id="columns"></div>
 
 
   <div class="container-fluid">
 
-
-
-
-    <aside id='results_column'>
+    <aside id='results_column' class="col-md-3">
       <h5 class='results_header'>Show results for :</h5>
       <ul id='categories'>
         <li class="results">Jewelry</li>
@@ -63,23 +43,94 @@
         <li class="results">Pet Supplies</li>
         <li class="results">Shoes</li>
       </ul>
-
-      <div id='refine_search'>
-        <h5 class='refine_search_header'>Refine your search</h5>
-        <ul id="refine_categories">
-          <li class="refine_search">
-            <input type="radio"> All Items</li>
-
-          <li class="refine_search">
-            <input type="radio"> Handmade
-          </li>
-
-          <li class="refine_search">
-            <input type="radio"> Vintage
-          </li>
-        </ul>
-      </div>
     </aside>
+    <!--End of results column -->
+
+
+    <!--Beginning of Result images column 1 -->
+    <section class="results_images col-md-3">
+      <ul id="results_col_1">
+        <li class="images_col_1">
+          <img src="http://lorempixel.com/226/172/city">
+          <span class="image_col_1_descr">
+            <h5>Product 1 for the first results it here.</h5>
+            <a href>Shop</a>
+          </span>
+        </li>
+        <li class="images_col_1">
+          <img src="http://lorempixel.com/226/172/city">
+          <span class="image_col_1_descr">
+            <h5>Product 1</h5>
+            <a href>Shop</a>
+          </span>
+        </li>
+      </ul>
+    </section>
+    <!--End of Result images column 1 -->
+
+    <!--Beginning of Result Images column 2 -->
+    <section class="results_images col-md-3">
+      <ul id="results_col_2">
+        <li class="images_col_2">
+          <img src="http://lorempixel.com/226/172/city">
+          <span class="image_col_2_descr">
+            <h5>Product 1 for the first results it here.</h5>
+            <a href>Shop</a>
+          </span>
+        </li>
+        <li class="images_col_2">
+          <img src="http://lorempixel.com/226/172/city">
+          <span class="image_col_2_descr">
+            <h5>Product 1</h5>
+            <a href>Shop</a>
+          </span>
+        </li>
+      </ul>
+    </section>
+    <!--End of Result Images column 2 -->
+
+
+    <!--Beginning of Result Images column 3 -->
+    <section class="results_images col-md-3">
+      <ul id="results_col_3">
+        <li class="images_col_3">
+          <img src="http://lorempixel.com/226/172/city">
+          <span class="image_col_3_descr">
+            <h5>Product 1 for the first results it here.</h5>
+            <a href>Shop</a>
+          </span>
+        </li>
+        <li class="images_col_3">
+          <img src="http://lorempixel.com/226/172/city">
+          <span class="image_col_3_descr">
+            <h5>Product 1</h5>
+            <a href>Shop</a>
+          </span>
+        </li>
+      </ul>
+    </section>
+    <!--End of Result Images column 3 -->
+
+
+
+    <!--End of categories column-->
+
+    <!-- <div id='refine_search'>
+      <h5 class='refine_search_header'>Refine your search</h5>
+      <ul id="refine_categories">
+        <li class="refine_search">
+          <input type="radio"> All Items</li>
+
+        <li class="refine_search">
+          <input type="radio"> Handmade
+        </li>
+
+        <li class="refine_search">
+          <input type="radio"> Vintage
+        </li>
+      </ul>
+    </div>
+    </aside> -->
     <!--End of results Column -->
 
 
