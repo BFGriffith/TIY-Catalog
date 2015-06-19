@@ -1,19 +1,24 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
+var gulp = require('gulp'),
+  userref = require('gulp-useref'),
+  browserSync = require('browser-sync').create(),
+  sass = require('gulp-sass');
 
 gulp.task('browser-sync', function() {
 
       browserSync.init({
         server: {
-          baseDir: "./"
+          baseDir: "src/",
+          routes: {
+            "/bower_components": 'bower_components'
+
+          }
         }
       });
     } //End of gulp.task browser-sync
 
-gulp.task('serve', ['sass'], function() {
-  var sass = require('gulp-sass');
-    browserSync.init({
+    gulp.task('serve', ['sass'], function() {
+      var sass = require('gulp-sass');
+      browserSync.init({
         server: "src/"
       });
 
