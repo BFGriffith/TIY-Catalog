@@ -33,6 +33,6 @@
     "wiredep": "^2.2.2"
   },
   "dependencies": {
-    "gulp-useref": "^1.2.0"
+    "gulp-useref": "^1.2.0",
   }
 }

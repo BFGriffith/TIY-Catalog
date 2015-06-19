@@ -16,7 +16,8 @@
     "modernizr": "~2.8.3",
     "lodash": "~3.9.3",
     "normalize.css": "~3.0.3",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "vue": "0.12.1"
   },
   "devDependencies": {
     "bootstrap": "~3.3.5"
