@@ -7,138 +7,151 @@
     <title>TIY-Catalog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!--bower:css-->
     <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-    <link <rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <!--endbower-->
     <link rel="stylesheet" href="css/main_listing.css">
 
 </head>
 
 <body>
-    <header class="container-fluid" id="store_header">
-        <div class="row" id="store_header_content">
-            <!--   Per reference implementation: itemscope itemtype -->
-            <div itemscope itemtype="http:data-vocabulary.org/Breadcrumb">
-                <img src="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg">
-                <a itemprop="url" href="https://www.etsy.com/shop/undulatingcontours?ref=l2-shopheader-name">
-                    <span itemprop="title">undulatingcontours</span>
-                </a>
-            </div>
+    <div class="container-fluid">
+        <div class="row" id="header_row">
+            <header class="col-md-2" id="store_header">
+                <!--   Per reference implementation: itemscope itemtype -->
+                <div class="col-md-1" itemscope itemtype="http:data-vocabulary.org/Breadcrumb">
+                    <img src="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg">
+                    <a itemprop="url" href="https://www.etsy.com/shop/undulatingcontours?ref=l2-shopheader-name"></a>
+                </div>
+                <div class="col-md-1" id="favorite_seller">
+                    <p itemprop="title">undulatingcontours</p>
+                    <p>{{Favorite Shop}}</p>
+                </div>
+                <!-- Start of thumbnails -->
+                <div class=".col-md-5 .col-md-offset-6" id="shop_listings">
+                    <div class="thumbnails">
+                        <div class="col-md-1">
+                            <img src="http://lorempixel.com/75/75/cats" alt="thumb_1">
+                        </div>
+                        <div class="col-md-1">
+                            <img src="http://lorempixel.com/75/75/abstract" alt="thumb_2">
+                        </div>
+                        <div class="col-md-1">
+                            <img src="http://lorempixel.com/75/75/food" alt="thumb_3">
+                        </div>
+                        <div class="col-md-1">
+                            <img src="http://lorempixel.com/75/75/nature" alt="thumb_4">
+                        </div>
+                        <div class="col-md-1" id="store_item_count"><a href="https://www.etsy.com/shop/undulatingcontours?ref=listing-shop-header-item-count">31 items</a></div>
+                    </div>
+                </div>
+                <!-- End of thumbnails -->
+            </header>
+        </div>
 
-            <div class="favorite_seller">
-                <span>{{Favorite Shop}}</span>
-            </div>
-            <!-- Start of thumbnails -->
-            <div id="shop_listings">
-                <div class="thumbnails">
-                    <div class="col-md-1">
-                        <img src="http://lorempixel.com/75/75/cats" alt="thumb_1">
-                    </div>
-                    <div class="col-md-1">
-                        <img src="http://lorempixel.com/75/75/abstract" alt="thumb_2">
-                    </div>
-                    <div class="col-md-1">
-                        <img src="http://lorempixel.com/75/75/food" alt="thumb_3">
-                    </div>
-                    <div class="col-md-1">
-                        <img src="http://lorempixel.com/75/75/nature" alt="thumb_4">
-                    </div>
-                    <div><a href="https://www.etsy.com/shop/undulatingcontours?ref=listing-shop-header-item-count">31 items</a></div>
+        <!-- Start of seller info -->
+        <div class="row" id="content_wrapper">
+            <div class=".col-md-4" id="seller_info">
+                <div class="logo">
+                    <a href="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg" class="class=" col-md-1>
+                        <img src="http://lorempixel.com/75/75/technics" alt="logo">
+                    </a>
                 </div>
             </div>
-            <!-- End of thumbnails -->
-        </div>
-    </header>
+            <!-- End of seller info -->
 
-    <!-- Start of seller info -->
-    <main class="container-fluid" id="content_wrapper">
-        <div class="row" id="seller_info">
-            <div class="logo">
-                <a href="https://img0.etsystatic.com/021/0/25128870/iusa_75x75.23838936_94l0.jpg" class="class=" col-md-1>
-                    <img src="http://lorempixel.com/75/75/technics" alt="logo">
+
+
+            <!-- start of banner container -->
+            <div class="listing_add_favs">
+                <button type="button" class="favorite">Favorite</button>
+                <div class="like_item">
+                    <h2>Like this item?</h2>
+                    <p>Add it to your favorites to revisit it later.</p>
+                </div>
+            </div>
+
+            <!-- start of large image container -->
+            <div class="col-md-3 id=" large_img_wrapper ">
+            <figure class="slideshow id="listing_image ">
+                <a href="#" rel="prev">
+                    <span></span>
                 </a>
-            </div>
-        </div>
-        <!-- End of seller info -->
-
-
-        <!-- start of like this banner container -->
-        <div class="listing_add_favs">
-            <button type="button" class="favorite">Favorite</button>
-            <div class="like_item">
-                <h2>Like this item?</h2>
-                <p>Add it to your favorites to revisit it later.</p>
-            </div>
-        </div>
-
-        <!-- start of large image container -->
-        <div class="col-md-3 id=" large_img_wrapper ">
-            <div id="listing_image ">
+                <a href="#" rel="next">
+                    <span></span>
+                </a>
                 <img src="https://img1.etsystatic.com/061/0/7321706/il_570xN.786457521_7ct1.jpggit " alt=" ">
+                </figure>
             </div>
+
         </div>
 
-    </main>
-
-    <div class="container-fluid">
-        <h2 id="related ">
-            <strong>Related to this Item</strong>
-        </h2>
-        <div class="row ">
-        <button>
-            <a href="# ">Electronics & Accessories</a>
-        </button>
-          <button>
-              <a href="# ">Docking & Stands</a>
-          </button>
-          <button>
-              <a href="# ">Docking Stations</a>
-          </button>
-          <button>
-              <a href="# ">wood dock</a>
-          </button>
-          <button>
-              <a href="# ">iphone dock</a>
-          </button>
-          <button>
-              <a href="# ">charging station</a>
-          </button>
-          <button>
-              <a href="# ">iphone stand</a>
-          </button>
-          <button>
-              <a href="# ">valet</a>
-          </button>
-</div>
-<div class="row ">
-  <button>
-      <a href="# ">phone stand</a>
-  </button><button>
-      <a href="# ">docking station</a>
-  </button><button>
-      <a href="# ">Watch display</a>
-  </button><button>
-      <a href="# ">watch stand</a>
-  </button><button>
-      <a href="# ">6 plus</a>
-  </button><button>
-      <a href="# ">Iphone 6</a>
-  </button><button>
-      <a href="# ">Iphone 6 dock</a>
-  </button>
-  <button>
-      <a href="# ">Iphone 6 plus dock</a>
-  </button>
-</div>
-  </div>
-
+        <div class="row" id="template">
+            <h2 id="related ">
+                <strong>Related to this Item</strong>
+            </h2>
+            <div class="row ">
+                <button>
+                    <a href="# ">Electronics & Accessories</a>
+                </button>
+                <button>
+                    <a href="# ">Docking & Stands</a>
+                </button>
+                <button>
+                    <a href="# ">Docking Stations</a>
+                </button>
+                <button>
+                    <a href="# ">wood dock</a>
+                </button>
+                <button>
+                    <a href="# ">iphone dock</a>
+                </button>
+                <button>
+                    <a href="# ">charging station</a>
+                </button>
+                <button>
+                    <a href="# ">iphone stand</a>
+                </button>
+                <button>
+                    <a href="# ">valet</a>
+                </button>
+            </div>
+            <div class="row">
+                <button>
+                    <a href="# ">phone stand</a>
+                </button>
+                <button>
+                    <a href="# ">docking station</a>
+                </button>
+                <button>
+                    <a href="# ">Watch display</a>
+                </button>
+                <button>
+                    <a href="# ">watch stand</a>
+                </button>
+                <button>
+                    <a href="# ">6 plus</a>
+                </button>
+                <button>
+                    <a href="# ">Iphone 6</a>
+                </button>
+                <button>
+                    <a href="# ">Iphone 6 dock</a>
+                </button>
+                <button>
+                    <a href="# ">Iphone 6 plus dock</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- end:container fluid -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
     <!-- bower:js -->
     <script src="../bower_components/modernizr/modernizr.js "></script>
     <script src="../bower_components/jquery/dist/jquery.js "></script>
     <script src="../bower_components/lodash/lodash.js "></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.js "></script>
     <!-- endbower -->
     <script src="js/main.js "></script>
 </body>

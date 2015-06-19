@@ -31,5 +31,8 @@
     "gulp-useref": "^1.2.0",
     "node-sass": "^3.2.0",
     "wiredep": "^2.2.2"
+  },
+  "dependencies": {
+    "gulp-useref": "^1.2.0"
   }
 }
