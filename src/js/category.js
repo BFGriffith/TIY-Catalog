@@ -1,15 +1,22 @@
-(function(window){
+// (function(window){
+//
+//   $.getJSON('../product-detail/img/product-detail/img/images_main_img.json')
+//   .then(function(response)
+//
+//       new Vue({
+//         el: '.image'
+//       })
+//
+//
 
-  $.getJSON('../api/product-detail/img/images_main_img.json')
-    .then(function(allImages) {
 
-      function allImages(result) {
-        return {
 
-          main_image_url: result.MainImage.url_170x135,
-        }
-      }
+      // function response(result) {
+      //   return {
 
+      //     main_image_url: result.MainImage.url_170x135
+      //   };
+      // }
 
 
 
@@ -21,9 +28,9 @@
         // $image.attr('href', 'https:\/\/img0.etsystatic.com\/062\/0\/7321706\/il_170x135.786749714_hlug.jpg')
 
 
-  });//end of main image fn.
+  // });//end of main image fn.
 
 
 
 
-})(window);
+)(window);
