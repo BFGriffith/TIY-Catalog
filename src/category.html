@@ -9,8 +9,10 @@
   <!--bower:css-->
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+
   <!--endbower-->
   <link rel="stylesheet" href="css/main_category.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -56,9 +58,13 @@
         <section id="currency_input">
           <h5>Price</h5>
           <div>
-            <span class="currencyinput">$<input type="text" name="currency"></span>
+            <span class="currency_input">&#128178;</span><input type="text" placeholder="Low" class="input price_input" name="min" value>
           </div>
-
+          <p>to</p>
+          <div>
+            <span class="currency_input">&#128178;</span><input type="text" placeholder="High" class="input price_input" name="min" value>
+          </div>
+          <button><i class="fa fa-play"></i></button>
         </section>
 
       </aside>
