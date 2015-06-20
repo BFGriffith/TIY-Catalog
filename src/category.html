@@ -14,13 +14,13 @@
 </head>
 
 <body>
-  <!-- Left Side bar with category menu -->
+  <!-- Start of left sidebar-->
     <main class="content-wrapper">
-      <div>
-      <h5 class='results_header'>Show results for:</h5>
+      <div class="results-header">
+        <h5 class='results_header'>Show results for:</h5>
       </div>
         <section class="container-fluid">
-          <aside id='results_column' class="col-md-3">
+          <aside class="col-md-3" id='categories_column'>
             <ul class="results"><li class="all-categories"></li><a href="#">All Categories</a>
             </ul>
             <ul id='categories'>
@@ -41,8 +41,31 @@
               <li class="results"><a href="#">Shoes</a></li>
             </ul>
           </aside>
-  </section>
-    <!--End of results column -->
+        </section>
+      <div class="refine"><h5>Refine your search</h5>
+      </div>
+      <aside class="refine-search">
+        <section>
+          <h5>Item Type</h5>
+          <ul class="radio-selection">
+            <li input type="radio" label="All Items" accesskey="A">All Items</li>
+            <li input type="radio"><a href="#">Handmade</a></li>
+            <li input type="radio"><a href="#">Vintage</a></li>
+          </ul>
+        </section>
+        <section>
+          <h5>Price</h5>
+          <div>
+            <span class="currencyinput">$<input type="text" name="currency"></span>
+          </div>
+
+        </section>
+
+      </aside>
+
+
+        </section>
+    <!--End of left sidebar-->
 
 
     <!--Beginning of Result images column 1 -->
