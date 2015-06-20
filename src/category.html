@@ -1,49 +1,47 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>TIY-Catalog</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
   <!--bower:css-->
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <!--endbower-->
   <link rel="stylesheet" href="css/main_category.css">
-
 </head>
 
 <body>
-
-
-
-  <div class="container-fluid">
-
-    <aside id='results_column' class="col-md-3">
-      <h5 class='results_header'>Show results for :</h5>
-      <ul id='categories'>
-        <li class="results">Jewelry</li>
-        <li class="results">Craft Supplies and Tools</li>
-        <li class="results">Home and Living</li>
-        <li class="results">Art and Collectibles</li>
-        <li class="results">Accessories</li>
-        <li class="results">Clothing</li>
-        <li class="results">Paper and Party Supplies</li>
-        <li class="results">Bath and Beauty</li>
-        <li class="results">Bags and Purses</li>
-        <li class="results">Weddings</li>
-        <li class="results">Toys and Games</li>
-        <li class="results">Books, Movies, Music</li>
-        <li class="results">Electronics and Accessories</li>
-        <li class="results">Pet Supplies</li>
-        <li class="results">Shoes</li>
-      </ul>
-    </aside>
+  <!-- Left Side bar with category menu -->
+    <main class="content-wrapper">
+      <div>
+      <h5 class='results_header'>Show results for:</h5>
+      </div>
+        <section class="container-fluid">
+          <aside id='results_column' class="col-md-3">
+            <ul class="results"><li class="all-categories"></li><a href="#">All Categories</a>
+            </ul>
+            <ul id='categories'>
+              <li class="results"><a href="#">Jewerly</a></li>
+              <li class="results"><a href="#">Craft Supplies &amp; Tools</a></li>
+              <li class="results"><a href="#">Home &amp; Living</a></li>
+              <li class="results"><a href="#">Art &amp; Collectibles</a></li>
+              <li class="results"><a href="#">Accessories</a></li>
+              <li class="results"><a href="#">Clothing</a></li>
+              <li class="results"><a href="#">Paper &amp; Party Supplies</a></li>
+              <li class="results"><a href="#">Bath &amp; Beauty</a></li>
+              <li class="results"><a href="#">Bags &amp; Purses</a></li>
+              <li class="results"><a href="#">Weddings</a></li>
+              <li class="results"><a href="#">Toys &amp; Games</a></li>
+              <li class="results"><a href="#">Books, Movies, Music</a></li>
+              <li class="results"><a href="#">Electronics &amp; Accessories</a></li>
+              <li class="results"><a href="#">Pet Supplies</a></li>
+              <li class="results"><a href="#">Shoes</a></li>
+            </ul>
+          </aside>
+  </section>
     <!--End of results column -->
 
 
@@ -134,26 +132,21 @@
     <!--End of results Column -->
 
 
-
-
-
-
-
-
-  </div>
+  </main>
   <!-- End of container-fluid -->
-
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
   <!--bower:js-->
   <script src="../bower_components/modernizr/modernizr.js"></script>
   <script src="../bower_components/jquery/dist/jquery.js"></script>
   <script src="../bower_components/lodash/lodash.js"></script>
   <script src="../bower_components/vue/dist/vue.js"></script>
+   <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <!--endbower-->
 
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/category.js"></script>
+
 
 </body>
 
