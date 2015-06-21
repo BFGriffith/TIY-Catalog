@@ -85,8 +85,10 @@ display: inline-block}
     }
 
   .description{
-    border: 4px solid lightgreen;
+    border: 4px solid lightgrey;
     display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
 
     }
 .descriptionTitle{
@@ -104,9 +106,18 @@ display: inline-block}
 
   .ask_a_question{
     float: right;
+    margin-right: 1em;
   }
 
   .quantity{
     @extend .clearfix;
     color: darkgrey;
+  }
+
+  .giftCard{
+    padding-top: 1em;
+  }
+  .addToCart{
+    background-color: lightgreen;
+    border-radius: 5%;
   }
