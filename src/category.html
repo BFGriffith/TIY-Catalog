@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,60 +18,113 @@
 
 <body>
   <!-- Start of left sidebar-->
-    <main class="content-wrapper">
-      <div class="results-header">
-        <h5 class='results_header'>Show results for:</h5>
-      </div>
-        <section class="container-fluid">
-          <aside class="col-md-3" id='categories_column'>
-            <ul class="results"><li class="all-categories"></li><a href="#">All Categories</a>
-            </ul>
-            <ul id='categories'>
-              <li class="results"><a href="#">Jewerly</a></li>
-              <li class="results"><a href="#">Craft Supplies &amp; Tools</a></li>
-              <li class="results"><a href="#">Home &amp; Living</a></li>
-              <li class="results"><a href="#">Art &amp; Collectibles</a></li>
-              <li class="results"><a href="#">Accessories</a></li>
-              <li class="results"><a href="#">Clothing</a></li>
-              <li class="results"><a href="#">Paper &amp; Party Supplies</a></li>
-              <li class="results"><a href="#">Bath &amp; Beauty</a></li>
-              <li class="results"><a href="#">Bags &amp; Purses</a></li>
-              <li class="results"><a href="#">Weddings</a></li>
-              <li class="results"><a href="#">Toys &amp; Games</a></li>
-              <li class="results"><a href="#">Books, Movies, Music</a></li>
-              <li class="results"><a href="#">Electronics &amp; Accessories</a></li>
-              <li class="results"><a href="#">Pet Supplies</a></li>
-              <li class="results"><a href="#">Shoes</a></li>
-            </ul>
-          </aside>
-        </section>
-      <div class="refine"><h5>Refine your search</h5>
-      </div>
-      <aside class="refine-search">
-        <section id="radio_1">
-          <h5>Item Type</h5>
-          <form class="radio-selection">
-            <input type="radio" checked><a href="#"> All Items</a>
-            <input type="radio"><a href="#"> Handmade</a>
-            <input type="radio"><a href="#"> Vintage</a>
-          </form>
-        </section>
-        <section id="currency_input">
-          <h5>Price</h5>
-          <div>
-            <span class="currency_input">&#128178;</span><input type="text" placeholder="Low" class="input price_input" name="min" value>
-          </div>
-          <p>to</p>
-          <div>
-            <span class="currency_input">&#128178;</span><input type="text" placeholder="High" class="input price_input" name="min" value>
-          </div>
-          <button><i class="fa fa-play"></i></button>
-        </section>
-
+  <main class="content-wrapper">
+    <div class="results-header">
+      <h5 class='results_header'>Show results for:</h5>
+    </div>
+    <section class="container-fluid">
+      <aside class="col-md-3" id='categories_column'>
+        <ul class="results">
+          <li class="all-categories"></li><a href="#">All Categories</a>
+        </ul>
+        <ul id='categories'>
+          <li class="results"><a href="#">Jewerly</a></li>
+          <li class="results"><a href="#">Craft Supplies &amp; Tools</a></li>
+          <li class="results"><a href="#">Home &amp; Living</a></li>
+          <li class="results"><a href="#">Art &amp; Collectibles</a></li>
+          <li class="results"><a href="#">Accessories</a></li>
+          <li class="results"><a href="#">Clothing</a></li>
+          <li class="results"><a href="#">Paper &amp; Party Supplies</a></li>
+          <li class="results"><a href="#">Bath &amp; Beauty</a></li>
+          <li class="results"><a href="#">Bags &amp; Purses</a></li>
+          <li class="results"><a href="#">Weddings</a></li>
+          <li class="results"><a href="#">Toys &amp; Games</a></li>
+          <li class="results"><a href="#">Books, Movies, Music</a></li>
+          <li class="results"><a href="#">Electronics &amp; Accessories</a></li>
+          <li class="results"><a href="#">Pet Supplies</a></li>
+          <li class="results"><a href="#">Shoes</a></li>
+        </ul>
       </aside>
+    </section>
+    <div class="refine">
+      <h5>Refine your search</h5>
+    </div>
+    <aside class="refine-search">
+      <section id="radio_1">
+        <h5>Item Type</h5>
+        <form class="radio-selection">
+          <input type="radio" checked><a href="#"> All Items</a>
+          <input type="radio"><a href="#"> Handmade</a>
+          <input type="radio"><a href="#"> Vintage</a>
+        </form>
+      </section>
+      <section id="currency_input">
+        <h5>Price</h5>
+        <div>
+          <label><span class="currency_input">&#128178;</span>
+          <input type="text" placeholder="Low" class="input price_input" name="min" value></label>
+        </div>
+        <p>to</p>
+        <div>
+          <label><span class="currency_input">&#128178;</span>
+          <input type="text" placeholder="High" class="input price_input" name="min" value></label>
+        </div>
+        <button><i class="fa fa-play"></i></button>
+      </section>
+      <section>
+        <p>
+          <strong>Filter by Color</strong>
+        </p>
+        <div class="color_wrapper">
+          <ul>
+            <li class="color_array">
+              <a href="#"></a>
+            </li>
+            <li class="color_array">
+              <a href="#"></a>
+            </li>
+            <li class="color_array">
+              <a href="#"></a>
+            </li>
+            <li class="color_array">
+              <a href="#"></a>
+            </li>
+            <li class="color_array">
+              <a href="#"></a>
+            </li>
+            <li class="color_array">
+              <a href="#"></a>
+            </li>
+            <li class="color_array">
+              <a href="#"></a>
+            </li>
+            <li class="color_array">
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <p>
+          <strong>Ordering Options</strong>
+        </p>
+        <div>
+          <label><input type="checkbox"><a href="#">In Your Favorites</a></label>
+          <label><input type="checkbox"><a href="#">Accepts Etsy Gift Cards</a></label>
+          <label><input type="checkbox"><a href="#">Customizable</a></label>
+        </div>
+      </section>
+      <section>
+        <p><strong>Shop Location</strong></p>
+        <form class="radio-selection">
+          <input type="radio"><a href="#"> Anywhere</a>
+          <input type="radio"><a href="#"> United States</a>
+        </form>
+      </section>
+    </aside>
 
 
-        </section>
+
     <!--End of left sidebar-->
 
 
@@ -163,7 +217,7 @@
 
   </main>
   <!-- End of container-fluid -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
   <!--bower:js-->
   <script src="../bower_components/modernizr/modernizr.js"></script>
   <script src="../bower_components/jquery/dist/jquery.js"></script>
