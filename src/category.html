@@ -68,17 +68,26 @@
   </label>
 </div>
       </section>
-      <section id="currency_input">
+      <section id="col-xs-4">
         <h5>Price</h5>
         <form class="form-inline">
+          <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Low">
+          </div>
+        </div>
+    <p class="form-group">to</p>
+    <form class="form-inline">
+      <form class="form-inline">
     <div class="form-group">
-      <label class="sr-only" for="exampleInputEmail3">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Low">
-    </div>
-    <p>to</p>
-    <div class="form-group">
-      <label class="sr-only" for="exampleInputPassword3">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword3" placeholder="High">
+      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+      <div class="input-group">
+        <div class="input-group-addon">$</div>
+        <input type="text" class="form-control" id="exampleInputAmount" placeholder="High">
+      </div>
     </div>
         <button class="btn btn-default" type="submit"><i class="fa fa-play"></i></button>
       </section>
