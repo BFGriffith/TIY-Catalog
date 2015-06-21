@@ -11,16 +11,19 @@
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <!--endbower-->
-<link rel="stylesheet" href="css/main_category.css">  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main_category.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <!-- Start of left sidebar-->
-  <main class="container-fluid">
+<!--   Start of left sidebar -->
+  <div class="container-fluid">
     <div class="row">
-      <h5 class="col-md-4">Show results for:</h5>
+      <div class="col-md-2">
+      <div>
+      <h5>Show results for:</h5>
     <div class="center-block">
-      <aside class="col-md-4">
+      <aside>
         <ul class="results">
           <li class="all-categories"></li><a href="#">All Categories</a>
         </ul>
@@ -43,10 +46,11 @@
         </ul>
       </aside>
     </div>
-    <div class="col-md-4">
+  </div> <!-- End of Show Results for: -->
+
+    <div>
       <h5>Refine your search</h5>
-    </div>
-    <aside class="col-md-4">
+    <aside>
       <section>
         <h5>Item Type</h5>
         <div class="radio">
@@ -68,7 +72,7 @@
   </label>
 </div>
       </section>
-      <section id="col-xs-4">
+      <section>
         <h5>Price</h5>
         <form class="form-inline">
           <form class="form-inline">
@@ -98,28 +102,28 @@
         <div class="color_wrapper">
           <ul>
             <li class="color_array">
-              <a href="#"></a>
+              <a href="#" class="red"></a>
             </li>
             <li class="color_array">
-              <a href="#"></a>
+              <a href="#" class="orange"></a>
             </li>
             <li class="color_array">
-              <a href="#"></a>
+              <a href="#" class="yellow"></a>
             </li>
             <li class="color_array">
-              <a href="#"></a>
+              <a href="#" class="green"></a>
             </li>
             <li class="color_array">
-              <a href="#"></a>
+              <a href="#" class="turquoise"></a>
             </li>
             <li class="color_array">
-              <a href="#"></a>
+              <a href="#" class="purple"></a>
             </li>
             <li class="color_array">
-              <a href="#"></a>
+              <a href="#" class="black"></a>
             </li>
             <li class="color_array">
-              <a href="#"></a>
+              <a href="#" class="white"></a>
             </li>
           </ul>
         </div>
@@ -155,12 +159,13 @@
         </form>
       </section>
     </aside>
-
+</div><!-- end col-xs-3 -->
+</div><!-- end row -->
 
 
     <!--End of left sidebar-->
-
-
+<div class="row">
+  <div class="col-md-9">
     <!--Beginning of Result images column 1 -->
     <section class="results_images col-md-3">
       <ul id="results_col_1">
@@ -224,7 +229,8 @@
       </ul>
     </section>
     <!--End of Result Images column 3 -->
-
+    </div>
+</div>
 
 
     <!--End of categories column-->
@@ -247,8 +253,8 @@
     </aside> -->
     <!--End of results Column -->
 
+</div><!-- end fluid container -->
 
-  </main>
   <!-- End of container-fluid -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
   <!--bower:js-->
