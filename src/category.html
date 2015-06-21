@@ -10,24 +10,21 @@
   <!--bower:css-->
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-
   <!--endbower-->
-  <link rel="stylesheet" href="css/main_category.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main_category.css">  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <!-- Start of left sidebar-->
-  <main class="content-wrapper">
-    <div class="results-header">
-      <h5 class='results_header'>Show results for:</h5>
-    </div>
-    <section class="container-fluid">
-      <aside class="col-md-3" id='categories_column'>
+  <main class="container-fluid">
+    <div class="row">
+      <h5 class="col-md-4">Show results for:</h5>
+    <div class="center-block">
+      <aside class="col-md-4">
         <ul class="results">
           <li class="all-categories"></li><a href="#">All Categories</a>
         </ul>
-        <ul id='categories'>
+        <ul >
           <li class="results"><a href="#">Jewerly</a></li>
           <li class="results"><a href="#">Craft Supplies &amp; Tools</a></li>
           <li class="results"><a href="#">Home &amp; Living</a></li>
@@ -45,31 +42,45 @@
           <li class="results"><a href="#">Shoes</a></li>
         </ul>
       </aside>
-    </section>
-    <div class="refine">
+    </div>
+    <div class="col-md-4">
       <h5>Refine your search</h5>
     </div>
-    <aside class="refine-search">
-      <section id="radio_1">
+    <aside class="col-md-4">
+      <section>
         <h5>Item Type</h5>
-        <form class="radio-selection">
-          <input type="radio" checked><a href="#"> All Items</a>
-          <input type="radio"><a href="#"> Handmade</a>
-          <input type="radio"><a href="#"> Vintage</a>
-        </form>
+        <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    All Items
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Handmade
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+    Vintage
+  </label>
+</div>
       </section>
       <section id="currency_input">
         <h5>Price</h5>
-        <div>
-          <label><span class="currency_input">&#128178;</span>
-          <input type="text" placeholder="Low" class="input price_input" name="min" value></label>
-        </div>
-        <p>to</p>
-        <div>
-          <label><span class="currency_input">&#128178;</span>
-          <input type="text" placeholder="High" class="input price_input" name="min" value></label>
-        </div>
-        <button><i class="fa fa-play"></i></button>
+        <form class="form-inline">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail3">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Low">
+    </div>
+    <p>to</p>
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputPassword3">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword3" placeholder="High">
+    </div>
+        <button class="btn btn-default" type="submit"><i class="fa fa-play"></i></button>
       </section>
       <section>
         <p>
@@ -108,11 +119,24 @@
         <p>
           <strong>Ordering Options</strong>
         </p>
-        <div>
-          <label><input type="checkbox"><a href="#">In Your Favorites</a></label>
-          <label><input type="checkbox"><a href="#">Accepts Etsy Gift Cards</a></label>
-          <label><input type="checkbox"><a href="#">Customizable</a></label>
-        </div>
+        <div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    In Your Favorites
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" value="" disabled>
+    Accepts Etsy Gift Cards
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" value="" disabled>
+    Customizable
+  </label>
+</div>
       </section>
       <section>
         <p><strong>Shop Location</strong></p>
