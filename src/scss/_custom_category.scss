@@ -1,6 +1,11 @@
 body{
  background-color: #F5F5F1;
 }
+
+div.col-md-3 {
+  padding-right: 0;
+
+}
 aside{
   background-color: white;
   padding: 10px;
@@ -14,15 +19,12 @@ ul{
   list-style-type: none;
   text-align: left;
   padding-left: 10px;
-
+  padding-bottom: 5px;
 }
-
 
 li.color_array{
   list-style: none;
   display: inline-block;
-
-
 }
 
 li.color_array>a{
@@ -69,12 +71,16 @@ li.color_array>a.white{
 
 .results_wrap{
   margin-top: 37px;
+  padding-left: 0;
+
 }
 
 li.images_col{
   display: inline-block;
-  padding: 10px;
+  padding: 0px;
   background-color: white;
   border: 1px solid lightgrey;
   border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 10px;
 }
