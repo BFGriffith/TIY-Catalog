@@ -1,0 +1,86 @@
+body{
+ background-color: #F5F5F1;
+}
+
+div.col-md-3 {
+  padding-right: 0;
+
+}
+aside{
+  background-color: white;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+ul{
+  text-overflow: ellipsis;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+li.color_array{
+  list-style: none;
+  display: inline-block;
+}
+
+li.color_array>a{
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 3px;
+  border:1px solid #e2e2e2;
+}
+
+li.color_array>a.red{
+  background-color: red;
+}
+
+li.color_array>a.orange{
+  background-color: orange;
+}
+
+li.color_array>a.yellow{
+  background-color: yellow;
+}
+
+li.color_array>a.green{
+  background-color: green;
+}
+
+li.color_array>a.turquoise{
+  background-color: #0CCCF3;
+}
+
+li.color_array>a.purple{
+  background-color: purple;
+}
+
+li.color_array>a.black{
+  background-color: black;
+}
+
+li.color_array>a.white{
+  background-color: white;
+}
+
+/* Results Area */
+
+.results_wrap{
+  margin-top: 37px;
+  padding-left: 0;
+
+}
+
+li.images_col{
+  display: inline-block;
+  padding: 0px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 10px;
+}

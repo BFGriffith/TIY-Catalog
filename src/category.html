@@ -1,0 +1,334 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>TIY-Catalog</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--bower:css-->
+  <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <!--endbower-->
+  <link rel="stylesheet" href="css/main_category.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--   Start of left sidebar -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div>
+          <h5>Show results for:</h5>
+          <div class="center-block">
+            <aside>
+              <ul class="results">
+                <li class="all-categories"></li><a href="#">All Categories</a>
+              </ul>
+              <ul>
+                <li class="results"><a href="#">Jewerly</a></li>
+                <li class="results"><a href="#">Craft Supplies &amp; Tools</a></li>
+                <li class="results"><a href="#">Home &amp; Living</a></li>
+                <li class="results"><a href="#">Art &amp; Collectibles</a></li>
+                <li class="results"><a href="#">Accessories</a></li>
+                <li class="results"><a href="#">Clothing</a></li>
+                <li class="results"><a href="#">Paper &amp; Party Supplies</a></li>
+                <li class="results"><a href="#">Bath &amp; Beauty</a></li>
+                <li class="results"><a href="#">Bags &amp; Purses</a></li>
+                <li class="results"><a href="#">Weddings</a></li>
+                <li class="results"><a href="#">Toys &amp; Games</a></li>
+                <li class="results"><a href="#">Books, Movies, Music</a></li>
+                <li class="results"><a href="#">Electronics &amp; Accessories</a></li>
+                <li class="results"><a href="#">Pet Supplies</a></li>
+                <li class="results"><a href="#">Shoes</a></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+        <!-- End of Show Results for: -->
+
+        <div>
+          <h5>Refine your search</h5>
+          <aside>
+            <section>
+              <h5>Item Type</h5>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> All Items
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Handmade
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> Vintage
+                </label>
+              </div>
+            </section>
+            <section>
+              <h5>Price</h5>
+              <form class="form-inline">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">$</div>
+                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Low">
+                    </div>
+                  </div>
+                  <p class="form-group">to</p>
+                  <form class="form-inline">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">$</div>
+                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="High">
+                        </div>
+                      </div>
+                      <button class="btn btn-default" type="submit"><i class="fa fa-play"></i></button>
+            </section>
+            <section>
+              <p>
+                <strong>Filter by Color</strong>
+              </p>
+              <div class="color_wrapper">
+                <ul>
+                  <li class="color_array">
+                    <a href="#" class="red"></a>
+                  </li>
+                  <li class="color_array">
+                    <a href="#" class="orange"></a>
+                  </li>
+                  <li class="color_array">
+                    <a href="#" class="yellow"></a>
+                  </li>
+                  <li class="color_array">
+                    <a href="#" class="green"></a>
+                  </li>
+                  <li class="color_array">
+                    <a href="#" class="turquoise"></a>
+                  </li>
+                  <li class="color_array">
+                    <a href="#" class="purple"></a>
+                  </li>
+                  <li class="color_array">
+                    <a href="#" class="black"></a>
+                  </li>
+                  <li class="color_array">
+                    <a href="#" class="white"></a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <p>
+                <strong>Ordering Options</strong>
+              </p>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  <a href="#">In Your Favorites</a>
+                </label>
+              </div>
+              <div class="checkbox disabled">
+                <label>
+                  <input type="checkbox" value="" disabled>
+                  <a href="#">Accepts Etsy Gift Cards</a>
+                </label>
+              </div>
+              <div class="checkbox disabled">
+                <label>
+                  <input type="checkbox" value="" disabled>
+                  <a href="#">Customizable</a>
+                </label>
+              </div>
+            </section>
+            <section>
+              <p>
+                <strong>Shop Location</strong>
+              </p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                  <a href="#">Anywhere</a>
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                  <a href="#">United States</a>
+                </label>
+              </div>
+              <a href="#">Choose a custom location</a>
+            </section>
+          </aside>
+        </div>
+        <!-- end col-xs-3 -->
+      </div>
+      <!-- end row -->
+
+      <!--End of left sidebar-->
+      <div class="row">
+        <div class="col-md-8 results_wrap">
+          <!--Start of Result images column 1 -->
+          <section class="results_images">
+            <ul id="results_col_1">
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/nature">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/arch">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/nature">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+            </ul>
+          </section>
+          <!--End of Result images column 1 -->
+
+          <!--Start of Result Images column 2 -->
+          <section class="results_images">
+            <ul id="results_col_2">
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/arch">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/nature">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/arch">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+            </ul>
+          </section>
+          <!--End of Result Images column 2 -->
+
+          <!--Start of Result Images column 3 -->
+          <section class="results_images">
+            <ul id="results_col_1">
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/nature">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/arch">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/nature">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+            </ul>
+          </section>
+          <!--End of Result images column 3 -->
+
+          <!--Start of Result Images column 4 -->
+          <section class="results_images">
+            <ul id="results_col_2">
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/arch">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/nature">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+              <li class="images_col">
+                <img src="https://placeimg.com/224/172/arch">
+                <span class="image_desc">
+                  <h5>Product 1</h5>
+                  <a href="#">Shop</a>
+                </span>
+              </li>
+            </ul>
+          </section>
+          <!--End of Result images column 4 -->
+        </div>
+      </div>
+
+
+      <!--End of categories column-->
+
+      <!-- <div id='refine_search'>
+      <h5 class='refine_search_header'>Refine your search</h5>
+      <ul id="refine_categories">
+        <li class="refine_search">
+          <input type="radio"> All Items</li>
+
+        <li class="refine_search">
+          <input type="radio"> Handmade
+        </li>
+
+        <li class="refine_search">
+          <input type="radio"> Vintage
+        </li>
+      </ul>
+    </div>
+    </aside> -->
+      <!--End of results Column -->
+    </div>
+  </div>
+  <!-- end fluid container -->
+
+  <!-- End of container-fluid -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
+  <!--bower:js-->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/lodash/lodash.js"></script>
+  <script src="../bower_components/vue/dist/vue.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!--endbower-->
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/category.js"></script>
+
+
+</body>
+
+</html>
