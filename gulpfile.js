@@ -14,7 +14,7 @@ gulp.task('browser-sync', function() {
           }
         }
       });
-    } //End of gulp.task browser-sync
+    } //END of gulp.task browser-sync
 
     gulp.task('serve', ['sass'], function() {
       var sass = require('gulp-sass');
@@ -36,7 +36,7 @@ gulp.task('browser-sync', function() {
           outputStyle: 'compressed'
         }))
         .pipe(gulp.dest('dist/css/'))
-    }); //End of gulp.task(sass)
+    }); //END of gulp.task(sass)
 
     gulp.watch('watch:sass', function() {
 
@@ -44,6 +44,18 @@ gulp.task('browser-sync', function() {
       gulp.watch('src/index.html', ['build']);
 
     })
+
+    gulp.task('clean', function(done){
+     var del = require('del');
+
+     del([
+       'dist/**/*.*',
+       'dist/**/.*',
+       'dist/*.*',
+       'dist/*',
+       '!dist/.gitignore'
+     ], done);
+    }); //END gulp.task(clean)
 
     gulp.task('build', ['sass'], function() {
       gulp.src('src/*.html')
